@@ -163,18 +163,48 @@
 //     console.log(averageValue);
 
 //24. Skriv en for-loop som hittar och loggar ut det minsta talet i numbers.
-const numbers = [5, 8, 12, 20, 3];
-let smallestNumber = numbers[0];
+// const numbers = [5, 8, 12, 20, 3];
+// let smallestNumber = numbers[0];
 
-for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] < smallestNumber){
-        smallestNumber = numbers[i];
-    }
-}
-console.log(smallestNumber + " is the smallest number");
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] < smallestNumber){
+//         smallestNumber = numbers[i];
+//     }
+// }
+// console.log(smallestNumber + " is the smallest number");
 
 
 //25. Skapa en ny array som heter positiveNumbers och fyll den med endast de positiva talen från arrayen nedan. Använd en for-loop och en if-sats.
-const mixedNumbers = [3, -5, 12, -1, 8, -6];
+// const mixedNumbers = [3, -5, 12, -1, 8, -6];
+// const positiveNumbers = []; // Skapa en tom array
 
+// for (let i = 0; i < mixedNumbers.length; i++){ // Loopa igenom mixed array
+//     if (mixedNumbers[i] > 0 ){ // Jämför om värdet vi itererar över är större än 0.
+//         positiveNumbers.push(mixedNumbers [i]); // Om sant, pusha på det värdet på positiveNumbers-arrayen
+//     }
+// }
+// console.log(positiveNumbers); // Logga ut positiveNumbers-array
+
+
+//26. Utgå från arrayen mixedNumbers nedan. Skriv en for-loop utan att använda index, där du loggar varje positivt tal.
+// const mixedNumbers = [3, -5, 12, -1, 8, -6];
+
+// for (const number of mixedNumbers){
+//     if (number > 0){
+//     console.log(number);
+//     }
+// }
+
+//27. Använd en while-loop för att logga alla tal i arrayen numbers från och med index 0. Avbryt loopen om talet är större än 10.
+
+const mixedNumbers = [3, -5, 12, -1, 8, -6];
+let i = 0;
+
+while ( i < mixedNumbers.length) {
+    const number = mixedNumbers[i];
+    if (number > 10){
+    break;
+  }
+console.log(number);
+}
 
