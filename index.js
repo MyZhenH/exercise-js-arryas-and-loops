@@ -196,13 +196,33 @@
 // }
 
 //27. Använd en while-loop för att logga alla tal i arrayen numbers från och med index 0. Avbryt loopen om talet är större än 10.
-// const mixedNumbers = [3, -5, 12, -1, 8, -6];
+// const numbers = [5, 8, 12, 20, 3];
+// let index = 0;
+// let sum = 0;
 
-
+// while (sum < 10) { 
+//     console.log(numbers[index]);
+//     sum += numbers[index];
+//     index++;
+    
+//     if (sum > 10){
+//         break;
+//     }
+// }
+// console.log("Summan är nu större än 10: " + sum);
 
 //28. Utgå från arrayen mixedNumbers ovan. Använd en while-loop för att räkna hur många negativa tal det finns i arrayen. Logga antalet.
-// const mixedNumbers = [3, -5, 12, -1, 8, -6];
+const mixedNumbers = [3, -5, 12, -1, 8, -6];
+let index = 0;
+let sum = 0;
 
+while (index < mixedNumbers.length){
+    if (mixedNumbers[index] < 0) {
+        sum ++;
+        index ++;
+    }  
+    console.log("antal negativ tal i arrayen: " + sum);
+}
 
 
 //29. Skapa en array words med några ord i den, (exempel nedan). Använd en for-loop för att logga varje ord tillsammans med dess längd (antal bokstäver).
@@ -224,8 +244,16 @@
 
 
 //31. Skriv en while-loop som itererar genom arrayen numbers och loggar varje tal tills summan av de loggade talen överstiger 25.
+// const numbers = [5, 8, 12, 20, 3];
+// let sum = 0;
+// let index = 0;
 
-
+// while (sum < 25){
+//     console.log(numbers[index]);
+//     sum += numbers[index];
+//     index++;
+// }
+// console.log("Summan är inte längre mindre än 25: " + sum);
 
 
 //32. Använd en for-loop utan index för att summera alla värden i arrayen mixedNumbers. Logga ut summan.
@@ -262,5 +290,5 @@
 // console.log(`Antal ord som har fler än fem bokstäver: ${count}`); 
 
 //35. Skriv en while-loop som räknar upp talen från numbers-arrayen ovan tills ett udda tal hittas. Avbryt loopen vid första udda talet och logga resultatet.
-const numbers = [5, 8, 12, 20, 3];
+// const numbers = [5, 8, 12, 20, 3];
 
